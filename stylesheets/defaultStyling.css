@@ -18,7 +18,7 @@ body {
     text-align: center;
     background-color: #96B6C5;
     margin-top: -0.25cm;
-    height: 10%;
+    height: 2.5cm;
     font-size: 65px;
     padding-left: 1px;
     padding-right: 16px;
@@ -48,4 +48,14 @@ body {
     width: 15cm;
     height: 15cm;
 
+}
+
+#buttonLogIn {
+    background-color: #96B6C5;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
