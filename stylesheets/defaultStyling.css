@@ -29,7 +29,8 @@ body {
 #buttonLogIn {
     background-color: #96B6C5;
     color: #ffffff;
-    padding: 10px;
+    padding: 8px;
+    font-size: smaller;
     border: none;
     border-radius: 5px;
     cursor: pointer;
