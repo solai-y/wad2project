@@ -16,7 +16,9 @@ CREATE TABLE users (
 -- Inserting sample user data
 INSERT INTO users (username, password, name, primary_degree, secondary_degree, year_of_matriculation) 
 VALUES 
-    ('user1', 'hashed_password_1', 'John Doe', 'Computer Science', 'Mathematics', 2023),
-    ('user2', 'hashed_password_2', 'Jane Smith', 'Biology', NULL, 2022),
-    ('user3', 'hashed_password_3', 'Michael Johnson', 'Physics', 'Chemistry', 2024);
+    ('John', '123', 'John Doe', 'Computer Science', NULL, 2023),
+    ('Jane', 'ComplicatedPassword', 'Jane Smith', 'Information Systems', NULL, 2022),
+    ('Michael', 'pass', 'Michael Johnson', 'Information Systems', 'Business', 2024), 
+    ('Mark', 'pass123', 'Mark Brian', 'Business', NULL, 2024),
+    ('Larry', '456', 'Larry Lim', 'Business', 'Business', 2024);
 
