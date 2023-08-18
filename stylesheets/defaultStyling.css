@@ -17,6 +17,13 @@ body {
     color: #DDDDEE;
     text-align: center;
     background-color: #96B6C5;
+    margin-top: -0.25cm;
+    height: 2cm;
+    font-size: 65px;
+    padding-left: 1px;
+    padding-right: 16px;
+    width: 100%;
+    margin-left: -10px; /* this allows the thing to be flushed left*/
 }
 
 #login {
@@ -40,5 +47,5 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 15cm;
     height: 15cm;
-    
+
 }
