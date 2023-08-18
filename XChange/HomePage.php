@@ -9,6 +9,7 @@
     <title>XChange</title>  
 </head>
 <body>
+    <?php require_once("common.php") ?>
     <!-- navigation bar -->
     <nav class="navbar">
         <ul class="nav-list">

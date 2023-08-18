@@ -61,7 +61,7 @@ body {
     background-color: var(--hover-color);
 }
 
-/* the code below is the css for the navigaion bar */
+/* the code below is the css for the navigation bar */
 .navbar {
     background-color: var(--background-color);
     overflow: hidden;
@@ -82,7 +82,7 @@ body {
 .nav-list li a {
     display: block;
     padding: 14px 16px;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     text-decoration: none;
 }

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php require_once("common.php") ?> 
     <h1 id="title">XChange</h1>
 
     <!-- log in form -->

@@ -13,6 +13,16 @@ CREATE TABLE users (
     year_of_matriculation INT
 );
 
+-- Create the 'universities' table
+CREATE TABLE universities (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    exchange_slots INT,
+    country VARCHAR(50),
+    city VARCHAR(50),
+    picture_url VARCHAR(255)
+);
+
 -- Inserting sample user data
 INSERT INTO users (username, password, name, primary_degree, secondary_degree, year_of_matriculation) 
 VALUES 
@@ -21,4 +31,13 @@ VALUES
     ('Michael', 'pass', 'Michael Johnson', 'Information Systems', 'Business', 2024), 
     ('Mark', 'pass123', 'Mark Brian', 'Business', NULL, 2024),
     ('Larry', '456', 'Larry Lim', 'Business', 'Business', 2024);
+
+-- Insert sample university data
+INSERT INTO universities (name, exchange_slots, country, city, picture_url)
+VALUES
+    ('Massachusetts Institute of Technology', 10, 'United States', 'Cambridge', 'https://example.com/mit.jpg'),
+    ('Stanford University', 15, 'United States', 'Stanford', 'https://example.com/stanford.jpg'),
+    ('Harvard University', 8, 'United States', 'Cambridge', 'https://example.com/harvard.jpg'),
+    ('California Institute of Technology', 5, 'United States', 'Pasadena', 'https://example.com/caltech.jpg'),
+    ('University of Oxford', 12, 'United Kingdom', 'Oxford', 'https://example.com/oxford.jpg');
 
