@@ -1,4 +1,6 @@
-drop if exists users
+drop database if exists XChange;
+create database XChange;
+use XChange;
 
 -- Create the 'users' table
 CREATE TABLE users (
