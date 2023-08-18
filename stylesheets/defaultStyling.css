@@ -25,6 +25,10 @@ body {
     text-align: left;
     width: 10cm;
     height: 10cm;
+    margin-left: 2.5cm;
+    margin-right: 2.5cm;
+    margin-top: 2.5cm;
+    margin-bottom: 2.5cm;
 }
 
 #loginbox {
@@ -36,4 +40,5 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 15cm;
     height: 15cm;
+    
 }
