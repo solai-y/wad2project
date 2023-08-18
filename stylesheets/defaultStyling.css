@@ -26,30 +26,6 @@ body {
     margin-left: -10px; /* this allows the thing to be flushed left*/
 }
 
-#login {
-    background-color: grey;
-    border: 50px;
-    text-align: left;
-    width: 10cm;
-    height: 10cm;
-    margin-left: 2.5cm;
-    margin-right: 2.5cm;
-    margin-top: 2.5cm;
-    margin-bottom: 2.5cm;
-}
-
-#loginbox {
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 17.5px );
-    -webkit-backdrop-filter: blur( 17.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 15cm;
-    height: 15cm;
-
-}
-
 #buttonLogIn {
     background-color: #96B6C5;
     color: #ffffff;
@@ -58,4 +34,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+#buttonLogIn:hover {
+    background-color: #ADC4CE;
 }
