@@ -1,11 +1,18 @@
 /* 
 
-color palette:
-#96B6C5
-#ADC4CE
-#EEE0C9
-#F1F0E8
-#DDDDEE
+light color palette:
+Aero Blue: #96B6C5
+Bluish Gray: #ADC4CE
+Isabelline: #EEE0C9
+Alabaster: #F1F0E8
+Lavender Gray: #DDDDEE
+
+Dark Color Palette:
+Dark Blue: #354F5B
+Deep Teal: #465B66
+Rich Brown: #7C6D5E
+Charcoal Gray: #464646
+Deep Purple: #635D7D
 
 */
 
@@ -14,9 +21,11 @@ body {
 }
 
 #title {
-    color: #DDDDEE;
+    color: #464646;
+    /* charcoal gray */
     text-align: center;
     background-color: #96B6C5;
+    /* aero blue */
     margin-top: -0.25cm;
     height: 2.5cm;
     font-size: 65px;
@@ -28,7 +37,9 @@ body {
 
 #buttonLogIn {
     background-color: #96B6C5;
-    color: #ffffff;
+    /* aero blue */
+    color: #464646;
+    /* charcoal gray */
     padding: 8px;
     font-size: smaller;
     border: none;
