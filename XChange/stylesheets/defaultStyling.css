@@ -15,16 +15,25 @@ Charcoal Gray: #464646
 Deep Purple: #635D7D
 
 */
+:root {
+    --text-color: #464646;
+    /* Text color is deep teal and can be adjusted */
+    --background-color: #96B6C5;
+    /* background color is aero blue and can be adjusted */
+    --hover-color: #ADC4CE;
+    /* hover color is blueish gray and can be adjusted */
+
+}
 
 body {
     background-color: lightgrey;
 }
 
 #title {
-    color: #464646;
+    color: var(--text-color);
     /* charcoal gray */
     text-align: center;
-    background-color: #96B6C5;
+    background-color: var(--background-color);
     /* aero blue */
     margin-top: -0.25cm;
     height: 2.5cm;
@@ -36,9 +45,9 @@ body {
 }
 
 #buttonLogIn {
-    background-color: #96B6C5;
+    background-color: var(--background-color);
     /* aero blue */
-    color: #464646;
+    color: var(--text-color);
     /* charcoal gray */
     padding: 8px;
     font-size: smaller;
@@ -49,12 +58,12 @@ body {
 }
 
 #buttonLogIn:hover {
-    background-color: #ADC4CE;
+    background-color: var(--hover-color);
 }
 
 /* the code below is the css for the navigaion bar */
 .navbar {
-    background-color: #333;
+    background-color: var(--background-color);
     overflow: hidden;
 }
 
@@ -79,5 +88,5 @@ body {
 }
 
 .nav-list li a:hover {
-    background-color: #555;
+    background-color: var(--hover-color);
 }
