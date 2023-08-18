@@ -16,7 +16,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="LogInPage.html">Log Out</a></li>
+            <li><a href="LogInPage.php">Log Out</a></li>
         </ul>
     </nav>
 </body>

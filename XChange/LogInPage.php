@@ -22,6 +22,6 @@
             </form>
         </p>
     </div> 
-    <a href="HomePage.html">Home</a>
+    <a href="HomePage.php">Home</a>
 </body>
 </html>
