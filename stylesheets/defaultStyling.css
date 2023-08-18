@@ -20,6 +20,8 @@ body {
     margin-top: -0.25cm;
     height: 10%;
     font-size: 65px;
+    padding-left: 1px;
+    padding-right: 16px;
     width: 100%; /* to make it max out the width of the webpage*/
     margin-left: -10px; /* this allows the thing to be flushed left*/
 }
