@@ -11,15 +11,20 @@
 
 <body>
     <?php require_once("common.php") ?> 
+    <?php
+        if (isset($_POST['btnPost'])) {
+            $_SESSION['user'] = 'Jacob';
+        }
+    ?>
     <h1 id="title">XChange</h1>
 
     <!-- log in form -->
     <div>
         <p>
-            <form action="get">
+            <form method="post">
                 Username: <input type="text"> <br> <br>
                 Password:&nbsp; <input type="password"> <br> <br>
-                <button id="buttonLogIn">Log In</button>
+                <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
             </form>
         </p>
     </div> 
