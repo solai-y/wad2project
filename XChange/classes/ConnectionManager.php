@@ -2,7 +2,7 @@
 
 class ConnectionManager {
 
-    public function connect() {
+    public function getConnection() {
         $servername = 'localhost';
         $username = 'root';
         $password = 'root';

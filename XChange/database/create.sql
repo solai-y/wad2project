@@ -3,7 +3,7 @@ create database XChange;
 use XChange;
 
 -- Create the 'users' table
-CREATE TABLE users (
+CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE universities (
 );
 
 -- Inserting sample user data
-INSERT INTO users (username, password, name, primary_degree, secondary_degree, year_of_matriculation) 
+INSERT INTO user (username, password, name, primary_degree, secondary_degree, year_of_matriculation) 
 VALUES 
     ('John', '123', 'John Doe', 'Computer Science', NULL, 2023),
     ('Jane', 'ComplicatedPassword', 'Jane Smith', 'Information Systems', NULL, 2022),
