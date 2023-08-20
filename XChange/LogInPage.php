@@ -31,12 +31,9 @@
             } else {
                 $_SESSION['user'] = $user;
                 // redirect user to home page
-                var_dump($user);
+                header("Location: HomePage.php");
+                exit();
             }
-        }
-        // if no errors it gives the correct $_SESSION value
-        if (empty($listOfErrors)) {
-            $_SESSION['user'] = 'Jacob';
         }
     ?>
     <h1 id="title">XChange</h1>

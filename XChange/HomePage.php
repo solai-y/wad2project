@@ -23,5 +23,8 @@
             <li><a href="LogInPage.php">Log Out</a></li>
         </ul>
     </nav>
+    <?php
+        var_dump($_SESSION["user"])
+    ?>
 </body>
 </html>

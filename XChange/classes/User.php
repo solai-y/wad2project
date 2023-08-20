@@ -3,6 +3,10 @@
 class User{
     private $username;
     private $password;
+    private $campusID;
+    private $primaryDegree;
+    private $secondaryDegree;
+    private $yearOfMatriculation;
 
     public function __construct($campusID, $username,$password, $primaryDegree, $secondaryDegree, $yearOfMatriculation){
         $this->campusID = $campusID;
