@@ -22,6 +22,8 @@ Deep Purple: #635D7D
     /* background color is aero blue and can be adjusted */
     --hover-color: #ADC4CE;
     /* hover color is blueish gray and can be adjusted */
+    --error-color: #ff0000;
+    /* error color is blueish gray and can be adjusted */
 
 }
 
@@ -92,5 +94,16 @@ body {
 }
 
 .errors {
-    color: red;
+    color: var(--error-color); /* Red text color for errors */
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-top: 5px; /* Add spacing at the top of the error message */
+    text-align: center; /* Center-align the error message text */
+}
+
+.errorContainer {
+    border: 1px solid #ff0000; /* Add a red border around the error container */
+    background-color: #ffe6e6; /* Light red background color for the container */
+    padding: 10px; /* Add some padding inside the container */
+    border-radius: 5px; /* Add rounded corners to the container */
+    margin-top: 10px; /* Add spacing at the top of the container */
 }

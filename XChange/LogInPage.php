@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBOSS</title>
+    <title>XChange</title>
     <link rel="stylesheet" href="stylesheets/defaultStyling.css">
     <!-- the above line of code is for the stylesheet -->
 </head>
@@ -17,11 +17,9 @@
         if (isset($_POST['btnPost'])) {
             if ($_POST['username']=="") {
                 $listOfErrors[] = "Username is blank";
-            } elseif ($_POST['password']=="") {
+            } if ($_POST['password']=="") {
                 $listOfErrors[] = "Password is blank";
-            } else {
-
-            }
+            } 
         }
         // if no errors it gives the correct $_SESSION value
         if (empty($listOfErrors)) {
@@ -36,6 +34,7 @@
             <form method="post">
                 Username: <input type="text" name="username"> <br> <br>
                 Password:&nbsp; <input type="password" name="password"> <br> <br>
+                <div class="errorContainer">
                 <?php
                     if (!empty($listOfErrors)) {
                         echo "<ul class='errors'>";
@@ -45,6 +44,7 @@
                         echo "</ul>";
                     }
                 ?>
+                </div>
                 <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
             </form>
         </p>
