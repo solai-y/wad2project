@@ -28,7 +28,6 @@
                 $listOfErrors[] = "Username is incorrect";
             } elseif($user === false) {
                 $listOfErrors[] = "Password is incorrect";
-                // This has not been correctly implemented.
             } else {
                 $_SESSION['user'] = $user;
                 // redirect user to home page
