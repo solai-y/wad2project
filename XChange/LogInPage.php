@@ -34,17 +34,17 @@
             <form method="post">
                 Username: <input type="text" name="username"> <br> <br>
                 Password:&nbsp; <input type="password" name="password"> <br> <br>
-                <div class="errorContainer">
                 <?php
                     if (!empty($listOfErrors)) {
+                        echo "<div class='errorContainer'>";
                         echo "<ul class='errors'>";
                         foreach($listOfErrors as $error) {
                             echo "<li>$error</li>";
                         }
                         echo "</ul>";
+                        echo "</div>";
                     }
                 ?>
-                </div>
                 <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
             </form>
         </p>
