@@ -12,14 +12,18 @@
 <body>
     <?php require_once("common.php") ?> 
     <?php
+        //form validation
         $listOfErrors = array();
         if (isset($_POST['btnPost'])) {
-            if ($_POST['username']=="" & $_POST['password']=="") {
-                $listOfErrors[] = "Username or Password is blank";
+            if ($_POST['username']=="") {
+                $listOfErrors[] = "Username is blank";
+            } elseif ($_POST['password']=="") {
+                $listOfErrors[] = "Password is blank";
             } else {
 
             }
         }
+        // if no errors it gives the correct $_SESSION value
         if (empty($listOfErrors)) {
             $_SESSION['user'] = 'Jacob';
         }
