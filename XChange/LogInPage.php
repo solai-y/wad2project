@@ -57,6 +57,7 @@
             ?>
             <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
         </form>
+        <p class="reqRegister">Don't have an account? Click <a href="Register.php">here</a> to register.</p>
     </div> 
 </body>
 </html>

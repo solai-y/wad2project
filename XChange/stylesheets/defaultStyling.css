@@ -87,6 +87,11 @@ body {
     background-color: var(--hover-color);
 }
 
+.reqRegister {
+    text-align: center; 
+    color: var(--text-color);
+}
+
 /* the code below is the css for the navigation bar */
 .navbar {
     background-color: var(--background-color);
