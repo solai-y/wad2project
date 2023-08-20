@@ -13,6 +13,8 @@
     <?php require_once("common.php") ?> 
     <?php
         if (isset($_POST['btnPost'])) {
+            new ConnectionManager();
+            
             $_SESSION['user'] = 'Jacob';
         }
     ?>
