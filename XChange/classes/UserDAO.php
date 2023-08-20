@@ -25,7 +25,7 @@ class UserDAO{
 
     # Retrieve a user with a given username
     # Return null if no such user exists
-    public function retrieve($username){
+    public function retrieve($username, $password){
         $conn_manager = new ConnectionManager();
         $pdo = $conn_manager->getConnection();
         

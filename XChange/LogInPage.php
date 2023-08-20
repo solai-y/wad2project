@@ -23,9 +23,11 @@
         }
         if (empty($listOfErrors) && isset($_POST['btnPost'])) {
             $userDAO = new UserDAO;
-            $user = $userDAO->retrieve($_POST['username']);
+            $user = $userDAO->retrieve($_POST['username'], $_POST['password']);
             if ($user === null) {
-                $listOfErrors[] = "Username or password is incorrect";
+                $listOfErrors[] = "Username is incorrect";
+            } elseif($user === false) {
+                $listOfErrors[] = "Password is incorrect";
             } else {
                 $_SESSION['user'] = $user;
                 // redirect user to home page
