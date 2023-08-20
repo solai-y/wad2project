@@ -29,25 +29,24 @@
     <h1 id="title">XChange</h1>
 
     <!-- log in form -->
-    <div>
-        <p>
-            <form method="post">
-                Username: <input type="text" name="username"> <br> <br>
-                Password:&nbsp; <input type="password" name="password"> <br> <br>
-                <?php
-                    if (!empty($listOfErrors)) {
-                        echo "<div class='errorContainer'>";
-                        echo "<ul class='errors'>";
-                        foreach($listOfErrors as $error) {
-                            echo "<li>$error</li>";
-                        }
-                        echo "</ul>";
-                        echo "</div>";
+    <div class="logInFormDiv">
+        <form method="post" class="logInForm">
+            Username: <input type="text" name="username"> <br> <br>
+            Password:&nbsp; <input type="password" name="password"> <br> <br>
+            <?php
+                if (!empty($listOfErrors)) {
+                    echo "<div class='errorContainer'>";
+                    echo "<ol class='errors'>";
+                    foreach($listOfErrors as $error) {
+                        echo "<li>$error</li>";
                     }
-                ?>
-                <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
-            </form>
-        </p>
+                    echo "</ol>";
+                    echo "</div>";
+                    echo "<br>";
+                }
+            ?>
+            <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
+        </form>
     </div> 
     <a href="HomePage.php">Home</a>
 </body>
