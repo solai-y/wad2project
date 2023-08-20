@@ -7,7 +7,7 @@ class User{
     private $secondaryDegree;
     private $yearOfMatriculation;
 
-    public function __construct($campusID, $username,$password, $primaryDegree, $secondaryDegree, $yearOfMatriculation){
+    public function __construct($campusID, $username, $primaryDegree, $secondaryDegree, $yearOfMatriculation){
         $this->campusID = $campusID;
         $this->username = $username;
         $this->primaryDegree = $primaryDegree;
