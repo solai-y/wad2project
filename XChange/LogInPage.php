@@ -12,7 +12,6 @@
 <body>
     <?php require_once("common.php") ?> 
     <?php
-        var_dump($_SESSION);
         //form validation
         $listOfErrors = array();
         if (isset($_POST['btnPost'])) {
