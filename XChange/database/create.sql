@@ -5,7 +5,7 @@ use XChange;
 -- Create the 'users' table
 CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL,
+    user VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
     name VARCHAR(100) NOT NULL,
     primary_degree VARCHAR(100),
@@ -24,7 +24,7 @@ CREATE TABLE universities (
 );
 
 -- Inserting sample user data
-INSERT INTO user (username, password, name, primary_degree, secondary_degree, year_of_matriculation) 
+INSERT INTO user (user, password, name, primary_degree, secondary_degree, year_of_matriculation) 
 VALUES 
     ('John', '123', 'John Doe', 'Computer Science', NULL, 2023),
     ('Jane', 'ComplicatedPassword', 'Jane Smith', 'Information Systems', NULL, 2022),
