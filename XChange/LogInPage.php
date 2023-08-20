@@ -12,9 +12,15 @@
 <body>
     <?php require_once("common.php") ?> 
     <?php
+        $listOfErrors = array();
         if (isset($_POST['btnPost'])) {
-            new ConnectionManager();
-            
+            if ($_POST['username']=="" & $_POST['password']=="") {
+                $listOfErrors[] = "Username or Password is blank";
+            } else {
+
+            }
+        }
+        if (empty($listOfErrors)) {
             $_SESSION['user'] = 'Jacob';
         }
     ?>
@@ -24,8 +30,17 @@
     <div>
         <p>
             <form method="post">
-                Username: <input type="text"> <br> <br>
-                Password:&nbsp; <input type="password"> <br> <br>
+                Username: <input type="text" name="username"> <br> <br>
+                Password:&nbsp; <input type="password" name="password"> <br> <br>
+                <?php
+                    if (!empty($listOfErrors)) {
+                        echo "<ul class='errors'>";
+                        foreach($listOfErrors as $error) {
+                            echo "<li>$error</li>";
+                        }
+                        echo "</ul>";
+                    }
+                ?>
                 <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
             </form>
         </p>

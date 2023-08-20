@@ -90,3 +90,7 @@ body {
 .nav-list li a:hover {
     background-color: var(--hover-color);
 }
+
+.errors {
+    color: red;
+}
