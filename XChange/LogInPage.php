@@ -58,6 +58,5 @@
             <button id="buttonLogIn" name='btnPost' value='Post'>Log In</button>
         </form>
     </div> 
-    <a href="HomePage.php">Home</a>
 </body>
 </html>
