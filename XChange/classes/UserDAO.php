@@ -29,7 +29,7 @@ class UserDAO{
         $conn_manager = new ConnectionManager();
         $pdo = $conn_manager->getConnection();
         
-        $sql = "select * from user where username=:username";
+        $sql = "select * from user where user=:username";
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(":username",$username,PDO::PARAM_STR);
         $stmt->execute();
@@ -37,7 +37,7 @@ class UserDAO{
         $user = null;
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if($row = $stmt->fetch()){
-            $user = new User($row["username"],$row["hashed_password"]);
+            $user = new User($row["user"],$row["password"]);
         }
         
         $stmt = null;

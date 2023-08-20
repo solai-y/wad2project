@@ -21,6 +21,17 @@
                 $listOfErrors[] = "Password is blank";
             } 
         }
+        if (empty($listOfErrors) && isset($_POST['btnPost'])) {
+            $userDAO = new UserDAO;
+            $user = $userDAO->retrieve($_POST['username']);
+            if ($user === null) {
+                $listOfErrors[] = "Username or password is incorrect";
+            } else {
+                $_SESSION['user'] = $user;
+                // redirect user to home page
+                var_dump($user);
+            }
+        }
         // if no errors it gives the correct $_SESSION value
         if (empty($listOfErrors)) {
             $_SESSION['user'] = 'Jacob';
