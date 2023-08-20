@@ -38,7 +38,7 @@ class UserDAO{
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if($row = $stmt->fetch()){
             if (password_verify($password, $row['password'])) {
-                $user = new User($row['id'],$row["user"],$row["password"], $row["primary_degree"], $row['secondary_degree'], $row["year_of_matriculation"]);
+                $user = new User($row['id'],$row["user"], $row["primary_degree"], $row['secondary_degree'], $row["year_of_matriculation"]);
             } else {
                 $user = False;
             }
