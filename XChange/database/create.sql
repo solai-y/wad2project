@@ -23,14 +23,14 @@ CREATE TABLE universities (
     picture_url VARCHAR(255)
 );
 
--- Inserting sample user data
+-- Inserting sample user data Password for John is 123, Michael is pass, Larry is 456.
 INSERT INTO user (user, password, name, primary_degree, secondary_degree, year_of_matriculation) 
 VALUES 
-    ('John', '123', 'John Doe', 'Computer Science', NULL, 2023),
+    ('John', '$2y$10$gekoqAx2OTTi1FQDLdbBEOE.GIF/N.5cH03VqIwIuoZvbxVMgg4Pu', 'John Doe', 'Computer Science', NULL, 2023),
     ('Jane', 'ComplicatedPassword', 'Jane Smith', 'Information Systems', NULL, 2022),
-    ('Michael', 'pass', 'Michael Johnson', 'Information Systems', 'Business', 2024), 
+    ('Michael', '$2y$10$y81wlWHW5m2xF2TCzpBF3eBXRowLaDSdztkvruOR/I.ekIV2hrFzq', 'Michael Johnson', 'Information Systems', 'Business', 2024), 
     ('Mark', 'pass123', 'Mark Brian', 'Business', NULL, 2024),
-    ('Larry', '456', 'Larry Lim', 'Business', 'Business', 2024);
+    ('Larry', '$2y$10$Tl/Qs63WlxxCgy3PF9UXl.B24leJa8/5kInksmp5HELOnSGLXP8VG', 'Larry Lim', 'Business', 'Business', 2024);
 
 -- Insert sample university data
 INSERT INTO universities (name, exchange_slots, country, city, picture_url)
