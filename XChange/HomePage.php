@@ -11,7 +11,6 @@
 <body>
     <?php 
     require_once("Security.php");
-    require_once("common.php") 
     ?>
     <!-- navigation bar -->
     <nav class="navbar">
