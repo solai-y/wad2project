@@ -1,20 +1,17 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBOSS</title>
+    <title>XChange</title>
     <link rel="stylesheet" href="stylesheets/defaultStyling.css">
 </head>
 <body>
-    <h1 id="title">Better Boss</h1>
-    <div id="loginbox">
-        <p id="login">
-            Username: <input type="text"> <br>
-            Password:&nbsp; <input type="password">
-            hellow and james
-        </p>
-    </div> 
+    <h1 id="title">XChange</h1>
 </body>
 </html>
