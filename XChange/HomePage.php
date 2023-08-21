@@ -24,7 +24,12 @@
             <li><a href="LogOutProcessing.php">Log Out</a></li>
         </ul>
     </nav>
-    <table border="1">
+
+    <div class="profile" id="homeProfile">
+        Name:
+    </div>
+
+    <table border="1" class='list' id='universityList'>
         <th>University</th>
         <th>Exchange slots</th>
         <th>Country</th>
