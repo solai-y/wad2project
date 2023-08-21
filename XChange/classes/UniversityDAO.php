@@ -13,8 +13,13 @@ class UniversityDAO {
 
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if($row = $stmt->fetch()){
-            $listOfUniversities[] = new University()
+            // name, exchange_slots, country, city, picture_url
+            $listOfUniversities[] = new University($row['name'], $row['exchange_slots'], $row['country'], $row['city'], $row['picture_url']);
         }
+        
+        $stmt = null;
+        $pdo = null;
+        return $listOfUniversities;
     }
 
 }
