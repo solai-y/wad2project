@@ -1,8 +1,8 @@
 <?php
 
 class User{
-    private $username;
     private $campusID;
+    private $username;
     private $primaryDegree;
     private $secondaryDegree;
     private $yearOfMatriculation;
