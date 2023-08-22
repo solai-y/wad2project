@@ -11,6 +11,8 @@
 <body>
     <?php 
     require_once("Security.php");
+    $UniversityDAO = new UniversityDAO();
+    $Universities = $UniversityDAO->get();  
     ?>
     <!-- navigation bar -->
     <nav class="navbar">
@@ -22,8 +24,31 @@
             <li><a href="LogOutProcessing.php">Log Out</a></li>
         </ul>
     </nav>
+
+    <div class="profile" id="homeProfile">
+        Name:
+    </div>
+
+    <table border="1" class='list' id='universityList'>
+        <th>University</th>
+        <th>Exchange slots</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Image</th>
+        <?php
+            foreach($Universities as $University) {
+                echo "<tr>
+                <td>{$University->getName()}</td>
+                <td>{$University->getExchangeSlots()}</td>
+                <td>{$University->getCountry()}</td>
+                <td>{$University->getCity()}</td>
+                <td>{$University->getImage()}</td>
+                </tr>";
+            }
+        ?>
+    </table>
     <?php
-        var_dump($_SESSION["user"])
+        var_dump($_SESSION["user"]);
     ?>
 </body>
 </html>
