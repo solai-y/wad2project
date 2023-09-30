@@ -1,0 +1,137 @@
+/* 
+
+light color palette:
+Aero Blue: #96B6C5
+Bluish Gray: #ADC4CE
+Isabelline: #EEE0C9
+Alabaster: #F1F0E8
+Lavender Gray: #DDDDEE
+
+Dark Color Palette:
+Dark Blue: #354F5B
+Deep Teal: #465B66
+Rich Brown: #7C6D5E
+Charcoal Gray: #464646
+Deep Purple: #635D7D
+
+*/
+:root {
+    --text-color: #464646;
+    /* Text color is deep teal and can be adjusted */
+    --background-color: #96B6C5;
+    /* background color is aero blue and can be adjusted */
+    --hover-color: #ADC4CE;
+    /* hover color is blueish gray and can be adjusted */
+    --error-color: #ff0000;
+    /* error color is blueish gray and can be adjusted */
+
+}
+
+body {
+    background-color: lightgrey;
+}
+
+#title {
+    color: var(--text-color);
+    /* charcoal gray */
+    text-align: center;
+    background-color: var(--background-color);
+    /* aero blue */
+    margin-top: -0.25cm;
+    height: 2.5cm;
+    font-size: 65px;
+    padding-left: 1px;
+    padding-right: 16px;
+    width: 100%; /* to make it max out the width of the webpage*/
+    margin-left: -10px; /* this allows the thing to be flushed left*/
+}
+
+.logInFormDiv {
+    width: 300px;
+}
+
+.logInForm {
+    text-align: center;
+}
+
+.errors {
+    color: var(--error-color); /* Red text color for errors */
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-top: 5px; /* Add spacing at the top of the error message */
+    text-align: center; /* Center-align the error message text */
+}
+
+.errorContainer {
+    border: 1px solid #ff0000; /* Add a red border around the error container */
+    background-color: #ffe6e6; /* Light red background color for the container */
+    border-radius: 5px; /* Add rounded corners to the container */
+    width: inherit;
+    height: inherit;
+    text-align: center;
+}
+
+#buttonLogIn {
+    background-color: var(--background-color);
+    /* aero blue */
+    color: var(--text-color);
+    /* charcoal gray */
+    padding: 8px;
+    font-size: smaller;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#buttonLogIn:hover {
+    background-color: var(--hover-color);
+}
+
+.reqRegister {
+    text-align: center; 
+    color: var(--text-color);
+}
+
+/* the code below is the css for the navigation bar */
+.navbar {
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 14px 16px;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    background-color: var(--hover-color);
+}
+
+/* styles.css */
+.animate-on-scroll-container {
+    margin-top: 500px; /* Add some space at the top to start animation */
+}
+.animate-on-scroll {
+    opacity: 0; /* Initial opacity (hidden) */
+    transform: translateY(20px); /* Initial position (slightly below) */
+    transition: opacity 0.5s, transform 0.5s;
+}
+.animate-on-scroll.active {
+    opacity: 1; /* Full opacity (visible) */
+    transform: translateY(0); /* Final position (at original position) */
+}
